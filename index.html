@@ -224,9 +224,23 @@
     .stack-18 { display: grid; gap: 18px; }
   </style>
   
-    <!-- Calendly Widget CSS + JS -->
-    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+  <!-- Calendly Widget CSS + JS -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
+    .book-btn {
+      background-color: #0073e6;
+      color: white;
+      padding: 12px 24px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .book-btn:hover { background-color: #005bb5; }
+  </style>
 
   
 </head>
@@ -542,11 +556,13 @@
 
 
     <!-- Calendly Pop-up Button -->
-    <button 
-      onclick="Calendly.initPopupWidget({url: 'https://calendly.com/aa-solutions-global/dental-hygiene'});return false;"
-      style="padding: 12px 20px; font-size: 16px; border-radius: 8px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">
-      Book Appointment
-    </button>
+  <h1>Welcome to Demo Dental Clinic</h1>
+  <p>Need to book an appointment? Click below:</p>
+
+  <!-- Calendly Pop-up Button -->
+  <button class="book-btn" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/aa-solutions-global/dental-hygiene'});return false;">
+    Book Appointment
+  </button>
 
     
     <!-- CONTACT -->
