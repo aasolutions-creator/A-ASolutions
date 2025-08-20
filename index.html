@@ -228,7 +228,7 @@
   <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
   <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 
-  <style>
+  <style>   
     body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
     .book-btn {
       background-color: #0073e6;
@@ -241,7 +241,15 @@
     }
     .book-btn:hover { background-color: #005bb5; }
   </style>
-
+  
+  <style>
+    /* Calendly floating button position fix */
+    .calendly-badge-widget {
+      bottom: 80px !important; /* pushes it 80px above Crisp chat bubble */
+      right: 20px !important;  /* keep it aligned right */
+    }
+  </style>
+  
   
 </head>
 <body>
